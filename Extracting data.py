@@ -5,7 +5,7 @@ import seaborn as sea
 import matplotlib.pyplot as plt
 
 
-def extract(dir = 'Caso_conT_00/extract_conT',sim_time = 40,time_step= 0.05,start_time=0.05,var='Ec'):
+def extract(dir = 'extract_conT',sim_time = 4.95,time_step= 0.05,start_time=0.05,var='Ec'):
     list = ['extract_'+ str(v) + '.csv' for v in range(0,len(os.listdir(dir)))]
     Ec = []
     for i in list:
@@ -41,8 +41,3 @@ plotting(T_conT,yl='Temperatura [K]',title='Simulación 40s caso 0,0')
 #P = pd.DataFrame({'P con T':P_conT,'P sin T':P_sinT})
 #plotting(P,yl= 'Presión cinemática [m^2/s^2]',title= 'Simulación de 40s')
 
-#Vorticidad
-#V_conT = extract(dir='Vorticidad/V con t/vorticity',var='Vort')
-#V_sinT = extract(dir='Vorticidad/V sin t/vorticidad',var='Vort')
-#V = pd.DataFrame({'V con T':V_conT,'V sin T':V_sinT})
-#lotting(V,yl= 'Vorticidad',title= 'Simulación de 40s')
