@@ -1,0 +1,2 @@
+# Extracting-data-variables-from-OpenFoam
+For a given simulation on the CFD program OpenFoam, when applying 'integrate Variables' filter over all time steps, it show a data frame with all variables integrated for a given time step, that data frame can be exported to a csv file. Having multiple time steps means exporting multiple csv files, this program reads any requested variable on all data frames and unites them on a single data frame and plots them.  
